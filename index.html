@@ -7,22 +7,33 @@
   </head>
   <body>
     <header>
-      <a>
-        <img src="img/logo.png" width="220" height="68" alt="Логотип интернет магазина Техномарт">
-      </a>
-      <img src="img/icon-search.png" width="17" height="17" alt="Иконка поиска">
-      <input type="search" placeholder="Поиск">
-
-      <a href="bookmarks.html">Закладки: 0</a>
-      <a href="order.html">Корзина: 0</a>
-      <a href="order.html">Оформить заказ</a>
+      <!--<img src="img/logo.png" width="220" height="68" alt="Логотип интернет магазина Техномарт">-->
+      <ul class="top">
+        <li><!--<img src="img/icon-search.png" width="17" height="17" alt="Иконка поиска">-->
+          <input type="search" placeholder="Поиск:"></li>
+        <li><a href="bookmarks.html">Закладки:0</a></li>
+        <li><a href="order.html">Корзина: 0</a></li>
+        <li><a href="order.html">Оформить заказ</a></li>
+      </ul>
       <p>Интернет-магазин<br>
          строительных материалов<br>
          и инструментов для ремонта</p>
-
-
-
-
+         <table>
+          <tr>
+            <td>
+              <a href="tel+78125550555">+7 (812) 555-05-55</a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+            </td>
+          </tr>
+         </table>
+         <form>
+           <button>Войти</button>
+           <button>Регистрация</button>
+         </form>
       <nav class="main_nav">
         <ul>
           <li><a href="index.html">Главная</a></li>
@@ -38,23 +49,120 @@
     </header>
 
     <main>
+      <!--Таблица или список или дивы?-->
       <section>
-        <ul>
+        <h2 hidden>Mainblock</h2>
+        <ul class="promo">
           <li>Материалы</li>
           <li>Инструмент</li>
           <li>Техника</li>
           <li>Скидки 50%</li>
           <li>Доставка</li>
         </ul>
+<!--Слайдер-->
       </section>
       <section>
-        <h1>Популярные товары:</h1>
+        <h2>Популярные товары</h2>
+        <button>ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</button>
+        <ul class="top_items">
+          <li>Перфоратор BOSCH<br> BFG 9000 <br><s>32500 Р.</s><br>25500 Р.</li>
+          <li>Перфоратор BOSCH<br> BFG 3000 <br><s>22500 Р.</s><br>15500 Р.</li>
+          <li>Перфоратор BOSCH<br> BFG 6000 <br><s>30500 Р.</s><br>25500 Р.</li>
+          <li>Перфоратор BOSCH<br> BFG 2000 <br><br>12500 Р.</li>
+          </ul>
+      </section>
+      <section>
+        <h2>Популярные производители</h2>
+        <button>Все производители</button>
+        <ul>
+          <li><a href="catalog.html">Bosch</a></li>
+          <li><a href="catalog.html">Makita</a></li>
+          <li><a href="catalog.html">Dewalt</a></li>
+          <li><a href="catalog.html">Интеркол</a></li>
+          <li><a href="catalog.html">Hitachi</a></li>
+          <li><a href="catalog.html">LG</a></li>
+          <li><a href="catalog.html">AEG</a></li>
+          <li><a href="catalog.html">Metabo</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>Сервисы</h2>
+        <p>Хороший интернет магазин отличается от плохого не только ценами!<br>
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <ul>
+          <li>Доставка</li>
+          <li>Гарантия</li>
+          <li>Кредит</li>
+        </ul>
+        <h2>Доставка</h2>
+        <p>Мы с удовольствием доставим ваш товар прямо<br>
+        к вашему подъезду совершенно бесплатно!<br>
+        Ведь мы неплохо заработаем,<br>
+        поднимая его на ваш этаж!</p>
+        <!--Logo-->
+      </section>
+      <section>
+        <h2>Компания "Техномарт"</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br>
+          ремонта и строительства не оставит равнодушным любителей сэкономить на<br>
+          гастарбайтерах.</p>
+        <p>Мы може доставить ваш товар в самые отдаленные точки России!<br>
+        Техномарт работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автортрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <button>Подробнее о компании</button>
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами,<br>
+        заехав в наш офис:</p>
+
+        <!--MAP-->
+        <button>Заблудились? Напишите нам!</button>
       </section>
     </main>
 
     <footer>
-
+      <!--Logo-->
+      <ul>
+        <li><a href="about.html">Компания</a></li>
+        <li><a href="news.html">Новости</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="delivery.html">Доставка</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <table>
+        <tr>
+          <td>
+            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="tel+78125550555">+7 (812) 555-05-55</a>
+          </td>
+        </tr>
+       </table>
+      <ul>
+        <li><a href="materials.html">Материалы</a></li>
+        <li><a href="machinery.html">Техника</a></li>
+        <li><a href="tools.html">Инструмент</a></li>
+        <li><a href="promo.html">Спецпредложения</a></li>
+      </ul>
+      <p>&copy; 2010-2019 Компания "Техномарт"<br>
+        Все права защищены</p>
+      <!---Social networks icons-->
+      <table>
+        <tr>
+          <td>Обратная связь</td>
+          <td>Разработано -</td>
+        </tr>
+        <tr>
+          <td><a href="mailto:mail@html.academy.ru">mail@htmlacademy.com</a></td>
+          <td><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></td>
+        </tr>
+       </table>
     </footer>
-
   </body>
 </html>
